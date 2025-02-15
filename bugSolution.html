@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    //Efficiently appending text to existing div by using appendChild
+    const newParagraph1 = document.createElement("p");
+    newParagraph1.textContent = "This is a new paragraph.";
+    document.getElementById("myDiv").appendChild(newParagraph1);
+
+    const newParagraph2 = document.createElement("p");
+    newParagraph2.textContent = "This is another new paragraph.";
+    document.getElementById("myDiv").appendChild(newParagraph2);
+  </script>
+</body>
+</html>
